@@ -1,0 +1,696 @@
+Model {
+  Name			  "dpace_test"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  PostLoadFcn		  ",try, rti_mdl_postloadfcn(bdroot, 'UpdateModel', 25"
+", 'RTI1102'); catch, disp(lasterr); end, "
+  Created		  "Mon Sep 12 13:51:20 2011"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "fodor"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Dec 14 16:18:14 2011"
+  ModelVersionFormat	  "1.%<AutoIncrement:41>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "RTW"
+  StartTime		  "0.0"
+  StopTime		  "inf"
+  SolverMode		  "Auto"
+  Solver		  "FixedStepDiscrete"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "0.001"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "external"
+  RTWSystemTargetFile	  "rti1102.tlc"
+  RTWOptions		  " -aExtMode=1 -aForceParamTrailComments=0 -aInlineIn"
+"variantSignals=0 -aInlineParameters=0 -aLocalBlockOutputs=0 -aRTWVerbose=1 -a"
+"RollThreshold=5 -aShowEliminatedStatements=1"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  on
+  RTWTemplateMakefile	  "rti1102.tmf"
+  RTWMakeCommand	  "make_rti"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  ExtModeMexFile	  "rti_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeLogAll		  on
+  OptimizeBlockIOStorage  off
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "dpace_test"
+    Location		    [6, 74, 1442, 854]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    212
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [370, 240, 400, 270]
+      Orientation	      "left"
+      Value		      "0.29"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "DS1102ADC"
+      Ports		      [0, 4]
+      Position		      [440, 66, 510, 154]
+      SourceBlock	      "rtilib1102/DS1102/DS1102ADC"
+      SourceType	      "DS1102ADC"
+      DialogFcn		      "gui1102adc"
+      UnitName		      "{ 'DS1102ADC' }"
+      UnitValues	      "{ [] }"
+      DSProperties	      "struct('RTI',struct('Version',uint32(1),'BlockT"
+"ype',struct('isSLSource',uint8(1),'isSLSink',uint8(0),'isHWSource',uint8(1),'"
+"isHWSink',uint8(0),'isSetup',uint8(0),'isInline',uint8(1),'isNonInline',uint8"
+"(0),'isInterrupt',uint8(0),'isChannelwise',uint8(0)),'IOBoardType','DS1102','"
+"UnitType','ADC','Identifier','ADC','DialogType','ML','BlockSet','NONE','Slave"
+"Processor','NONE'))"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "DS1102DAC"
+      Ports		      [4]
+      Position		      [335, 66, 405, 154]
+      SourceBlock	      "rtilib1102/DS1102/DS1102DAC"
+      SourceType	      "DS1102DAC"
+      Range		      "[10 10 10 10]"
+      InitValue		      "[0 0 0 0]"
+      TermMode		      "[1 1 1 1]"
+      TermValue		      "[0 0 0 0]"
+      DialogFcn		      "gui1102dac"
+      UnitName		      "{ 'DS1102DAC' }"
+      UnitValues	      "{ [] }"
+      DSProperties	      "struct('RTI',struct('Version',uint32(1),'BlockT"
+"ype',struct('isSLSource',uint8(0),'isSLSink',uint8(1),'isHWSource',uint8(0),'"
+"isHWSink',uint8(1),'isSetup',uint8(0),'isInline',uint8(1),'isNonInline',uint8"
+"(0),'isInterrupt',uint8(0),'isChannelwise',uint8(0)),'IOBoardType','DS1102','"
+"UnitType','DAC','Identifier','DAC','DialogType','ML','BlockSet','NONE','Slave"
+"Processor','NONE'))"
+    }
+    Block {
+      BlockType		      Derivative
+      Name		      "Derivative"
+      Position		      [280, 200, 310, 230]
+      Orientation	      "left"
+    }
+    Block {
+      BlockType		      DiscreteZeroPole
+      Name		      "Discrete\nZero-Pole1"
+      Position		      [425, 196, 540, 234]
+      Orientation	      "left"
+      Zeros		      "[-1 -1]"
+      Poles		      "[0.9555985337+1i*0.0425120826 0.9555985337-1i*0"
+".0425120826]"
+      Gain		      "1/1.058546241e+03"
+      SampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      Position		      [165, 85, 195, 115]
+      Gain		      "3"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain1"
+      Position		      [235, 145, 265, 175]
+      Orientation	      "up"
+      Gain		      "0.015"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RTI Data"
+      Tag		      "struct('RTIDataServer',struct('RTIDataServerVs'"
+",'2','RTIModelDescription','struct(''main'',''dpace_test'',''sub'','''',''isM"
+"p'',0)'))"
+      Ports		      []
+      Position		      [15, 15, 66, 27]
+      BackgroundColor	      "gray"
+      DropShadow	      on
+      ShowName		      off
+      CopyFcn		      "try,  rtidc('DataHostBlockClbCopy', gcbh); catc"
+"h, disp(['Warning: ''CopyFcn'' for RTI Data block failed: ' lasterr]); end"
+      DeleteFcn		      "try,  rtidc('DataHostBlockClbDelete', gcbh); ca"
+"tch, disp(['Warning: ''DeleteFcn'' for RTI Data block failed: ' lasterr]); en"
+"d"
+      LoadFcn		      "try,  rtidc('DataHostBlockClbLoad', gcbh); catc"
+"h, disp(['Warning: ''LoadFcn'' for RTI Data block failed: ' lasterr]); end"
+      ModelCloseFcn	      "try,  rtidc('DataHostBlockClbModelClose', gcbh)"
+"; catch, disp(['Warning: ''ModelCloseFcn'' for RTI Data block failed: ' laste"
+"rr]); end"
+      PreSaveFcn	      "try,  rtidc('DataHostBlockClbPreSave', gcbh); c"
+"atch, disp(['Warning: ''PreSaveFcn'' for RTI Data block failed: ' lasterr]); "
+"end"
+      PostSaveFcn	      "try,  rtidc('DataHostBlockClbPostSave', gcbh); "
+"catch, disp(['Warning: ''PostSaveFcn'' for RTI Data block failed: ' lasterr])"
+"; end"
+      NameChangeFcn	      "try,  rtidc('DataHostBlockClbNameChange', gcbh)"
+"; catch, disp(['Warning: ''NameChangeFcn'' for RTI Data block failed: ' laste"
+"rr]); end"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "RTI_DATA_HOST"
+      MaskDescription	      "RTI Data Block.\nThis block is used by RTI to s"
+"tore internal model-dependent data.\nPlease keep this block on the root level"
+" of the model. Deleting this block will result in data loss.\n\nNEVER DELETE "
+"OR COPY THIS BLOCK!"
+      MaskHelp		      "RTI Data Block.\nThis block is used by RTI to s"
+"tore internal model-dependent data.\nPlease keep this block on the root level"
+" of the model. Deleting this block will result in data loss.\n\nNEVER DELETE "
+"OR COPY THIS BLOCK!"
+      MaskDisplay	      "text(0.5, 0.5, 'RTI Data', 'HorizontalAlignment"
+"', 'center');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      System {
+	Name			"RTI Data"
+	Location		[450, 250, 640, 300]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RTI Data Store"
+	  Tag			  "struct('private',struct('version',struct('d"
+"sVer',uint32(2),'dsVerCreation',uint32(2),'RTI',struct('ver','4.1','type','RT"
+"I1102')),'access',struct('type','Model','isPerm',1,'created',['12-Sep-2011 13"
+":51:55'],'modified',['14-Dec-2011 16:18:14'],'location','')),'public',struct("
+"'main',struct('data',[]),'sub',struct('name',{{'dpace_test'}},'data',{{struct"
+"('TH',struct('thTaskInfo',struct('taskType',{'TIMER','HWINT','TMRINT','SWINT'"
+"},'tasksNumOf',{2,0,0,0},'srcIds',{{'TIMERA','TIMERA2'},{},{},{}},'taskNames'"
+",{{['Timer Task 1'],['Timer Task 2']},{},{},{}})),'th_tc',struct('taskType',{"
+"'TIMER','TIMER'},'blkh',{-1,-1},'srcId',{'TIMERA','TIMERA2'},'srcSgnName',{['"
+"Timer A interrupt'],['Timer Task 1']},'srcCpuName',{'',''},'taskName',{['Time"
+"r Task 1  [0.001] s'],['Timer Task 2  [0.1] s']},'smplTime',{1e-03,1.00000000"
+"00000001e-01},'smplTimeOffs',{0,0},'priority',{1,2},'ovcType',{1,1},'ovcMax',"
+"{0,0}),'tc_th',struct('taskType',{'TIMER','TIMER'},'blkh',{-1,-1},'srcId',{'T"
+"IMERA','TIMERA2'},'srcSgnName',{['Timer A interrupt'],['Timer Task 1']},'srcC"
+"puName',{'',''},'taskName',{['Timer Task 1  [0.001] s'],['Timer Task 2  [0.1]"
+" s']},'smplTime',{1e-03,1.0000000000000001e-01},'smplTimeOffs',{0,0},'priorit"
+"y',{1,2},'ovcType',{1,1},'ovcMax',{0,0}))}})))"
+	  Ports			  []
+	  Position		  [146, 12, 181, 25]
+	  ForegroundColor	  "white"
+	  ShowName		  off
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "RTI_DATA_STORE"
+	  MaskDescription	  "RTI Data Store Block. This block is used by"
+" RTI to store internal model dependent data. Deleting this block will result "
+"in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+	  MaskHelp		  "RTI Data Store Block. This block is used by"
+" RTI to store internal model dependent data. Deleting this block will result "
+"in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+	  MaskDisplay		  "text(0.5, 0.5, ' ', 'HorizontalAlignment', "
+"'center');"
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "normalized"
+	  System {
+	    Name		    "RTI Data Store"
+	    Location		    [450, 250, 640, 300]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    AutoZoom		    on
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "RTI Data Store"
+	      Ports		      []
+	      Position		      [146, 12, 181, 25]
+	      ForegroundColor	      "white"
+	      ShowName		      off
+	      ShowPortLabels	      on
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      MaskType		      "RTI_DATA_STORE"
+	      MaskDescription	      "RTI Data Store Block. This block is use"
+"d by RTI to store internal model dependent data. Deleting this block will res"
+"ult in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+	      MaskHelp		      "RTI Data Store Block. This block is use"
+"d by RTI to store internal model dependent data. Deleting this block will res"
+"ult in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+	      MaskDisplay	      "text(0.5, 0.5, ' ', 'HorizontalAlignmen"
+"t', 'center');"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "normalized"
+	      System {
+		Name			"RTI Data Store"
+		Location		[450, 250, 640, 300]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		AutoZoom		on
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "RTI Data Store"
+		  Ports			  []
+		  Position		  [146, 12, 181, 25]
+		  ForegroundColor	  "white"
+		  ShowName		  off
+		  ShowPortLabels	  on
+		  TreatAsAtomicUnit	  off
+		  RTWSystemCode		  "Auto"
+		  RTWFcnNameOpts	  "Auto"
+		  RTWFileNameOpts	  "Auto"
+		  MaskType		  "RTI_DATA_STORE"
+		  MaskDescription	  "RTI Data Store Block. This block is"
+" used by RTI to store internal model dependent data. Deleting this block will"
+" result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		  MaskHelp		  "RTI Data Store Block. This block is"
+" used by RTI to store internal model dependent data. Deleting this block will"
+" result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		  MaskDisplay		  "text(0.5, 0.5, ' ', 'HorizontalAlig"
+"nment', 'center');"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskIconUnits		  "normalized"
+		  System {
+		    Name		    "RTI Data Store"
+		    Location		    [450, 250, 640, 300]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    ZoomFactor		    "100"
+		    AutoZoom		    on
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "RTI Data Store"
+		    Ports		    []
+		    Position		    [146, 12, 181, 25]
+		    ForegroundColor	    "white"
+		    ShowName		    off
+		    ShowPortLabels	    on
+		    TreatAsAtomicUnit	    off
+		    RTWSystemCode	    "Auto"
+		    RTWFcnNameOpts	    "Auto"
+		    RTWFileNameOpts	    "Auto"
+		    MaskType		    "RTI_DATA_STORE"
+		    MaskDescription	    "RTI Data Store Block. This block "
+"is used by RTI to store internal model dependent data. Deleting this block wi"
+"ll result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		    MaskHelp		    "RTI Data Store Block. This block "
+"is used by RTI to store internal model dependent data. Deleting this block wi"
+"ll result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		    MaskDisplay		    "text(0.5, 0.5, ' ', 'HorizontalAl"
+"ignment', 'center');"
+		    MaskIconFrame	    off
+		    MaskIconOpaque	    on
+		    MaskIconRotate	    "none"
+		    MaskIconUnits	    "normalized"
+		    System {
+		    Name		    "RTI Data Store"
+		    Location		    [450, 250, 640, 300]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    ZoomFactor		    "100"
+		    AutoZoom		    on
+		    }
+		    }
+		  }
+		}
+	      }
+	    }
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      Saturate
+      Name		      "Saturation"
+      Position		      [85, 85, 115, 115]
+      UpperLimit	      "0.1"
+      LowerLimit	      "0"
+      LinearizeAsGain	      on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [1]
+      Position		      [755, 64, 785, 96]
+      Floating		      off
+      Location		      [5, 53, 1445, 873]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-1"
+      YMax		      "1"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope2"
+      Ports		      [1]
+      Position		      [755, 199, 785, 231]
+      Floating		      off
+      Location		      [5, 53, 1445, 873]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-1"
+      YMax		      "1"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      on
+      SampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope3"
+      Ports		      [1]
+      Position		      [1025, 414, 1055, 446]
+      Floating		      off
+      Location		      [5, 53, 1445, 873]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-1"
+      YMax		      "1"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData3"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      on
+      SampleTime	      "1/10"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [325, 245, 345, 265]
+      Orientation	      "left"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1]
+      Position		      [240, 90, 260, 110]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "Zero-Order\nHold"
+      Position		      [770, 411, 805, 449]
+      SampleTime	      "1/10"
+    }
+    Line {
+      SrcBlock		      "DS1102ADC"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      Points		      [-265, 0; 0, -155]
+      DstBlock		      "Saturation"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Saturation"
+      SrcPort		      1
+      DstBlock		      "Gain"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "DS1102ADC"
+      SrcPort		      2
+      Points		      [60, 0; 0, 115]
+      Branch {
+	DstBlock		"Discrete\nZero-Pole1"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Scope2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 215]
+	Branch {
+	  Points		  [0, 0; -240, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, 0]
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Discrete\nZero-Pole1"
+      SrcPort		      1
+      DstBlock		      "Derivative"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      DstBlock		      "DS1102DAC"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Derivative"
+      SrcPort		      1
+      Points		      [-25, 0]
+      DstBlock		      "Gain1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain1"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Zero-Order\nHold"
+      SrcPort		      1
+      DstBlock		      "Scope3"
+      DstPort		      1
+    }
+  }
+}

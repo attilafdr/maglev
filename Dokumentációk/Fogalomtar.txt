@@ -1,0 +1,6 @@
+Virtuális munkák módszere: Egy statikus erõhatás meghatározása a rendszer energiafüggvénye alapján; a függvény elmozdulás irányú deriváltja egyenlõ az erõvektor mínusz 1-szeresével.
+
+Mágneses indukció/Mágneses térerõsség: A szakdolgozat jellege miatt a terminológia tisztázására minél elõbb szükség van. A mágneses téretõsség az áramjárta vezetõ által létrehozott erõtér, mértékegysége A/m, jele a fizikában gyakran H.
+A Mágneses indukció, másnéven Mágneses fluxussûrûség az az eredõ erõtér, amely az áramjárta vezetõ(k) és a térben elhelyezkedõ anyagok mágnesezõdésével alakul ki. Jele általában B, mértékegysége Vs/m^2.
+Az Elektromágneses indukció az a jelenség, amikor a változó Mágneses indukció feszültséget indukál egy vezetõhurokban. Elektromágneses indukciós jelenség nem szerepel a szakdolgozatban, ezért a Mágneses indukció gyakran indukcióként van rövidítve.
+
